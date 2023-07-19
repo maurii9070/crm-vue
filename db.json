@@ -1,0 +1,30 @@
+{
+  "clientes": [
+    {
+      "nombre": "Juan",
+      "id": 1
+    },
+    {
+      "nombre": "Otro Juan",
+      "id": 2
+    },
+    {
+      "nombre": "Mauricio Nehuen",
+      "apellido": "Velazquez",
+      "email": "mauri_i9070@hotmail.com",
+      "telefono": "388-466-1119",
+      "empresa": "UNJu - Facultad de Ingenieria",
+      "puesto": "Fullstack",
+      "id": 3
+    },
+    {
+      "nombre": "Clauda",
+      "apellido": "Aban",
+      "email": "maurii9070@gmail.com",
+      "telefono": "388-466-1119",
+      "empresa": "Casa",
+      "puesto": "Casa",
+      "id": 4
+    }
+  ]
+}

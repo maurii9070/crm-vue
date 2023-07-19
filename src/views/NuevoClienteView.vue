@@ -1,8 +1,13 @@
 <script setup>
+	import axios from 'axios';
 	import { FormKit } from '@formkit/vue';
+
+	import { useRouter } from 'vue-router';
 
 	import Heading from '../components/ui/Heading.vue';
 	import RouterLink from '../components/ui/RouterLink.vue';
+
+	const router = useRouter();
 
 	defineProps({
 		titulo: {
@@ -11,14 +16,21 @@
 	});
 
 	const handleSubmit = data => {
-		console.log('Golas', data);
+		axios
+			.post('http://localhost:4000/clientes', data)
+			.then(respuesta => {
+				// Redireccionar
+				console.log(respuesta);
+				router.push({ name: 'listado-cliente' });
+			})
+			.catch(error => console.log('Error'));
 	};
 </script>
 
 <template>
 	<div>
 		<div class="flex justify-end">
-			<RouterLink to="inicio">Volver</RouterLink>
+			<RouterLink to="listado-cliente">Volver</RouterLink>
 		</div>
 
 		<Heading>{{ titulo }}</Heading>
