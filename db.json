@@ -1,0 +1,14 @@
+{
+  "clientes": [
+    {
+      "nombre": "Maurisio",
+      "apellido": "Velazquez",
+      "email": "mauri_i9070@hotmail.com",
+      "telefono": "388-414-5853",
+      "empresa": "UNJu - Facultad de Ingenieria",
+      "puesto": "Alumno",
+      "estado": false,
+      "id": 1
+    }
+  ]
+}
